@@ -12,4 +12,3 @@ def solution(my_str, n):
     if temp:
         answer.append(''.join(temp))
     return answer
-print(solution("abc1Addfggg4556b",6))
