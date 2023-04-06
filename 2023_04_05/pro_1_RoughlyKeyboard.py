@@ -12,7 +12,7 @@ def solution(keymap, targets):
         sum=0
         for j in i:
             if j not in key_dict:
-                sum = -1
+                sum= -1
                 break
 
             sum +=key_dict[j]
