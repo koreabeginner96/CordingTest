@@ -12,8 +12,9 @@ def solution(keymap, targets):
         sum=0
         for j in i:
             if j not in key_dict:
-                return -1
-            else:
-                sum +=key_dict[j]
+                sum = -1
+                break
+
+            sum +=key_dict[j]
         answer.append(sum)
     return answer
