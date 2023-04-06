@@ -1,25 +1,19 @@
 def solution(keymap, targets):
     answer = []
+    sum=0
     key_dict = {}
-
-    for key in keymap:
-        for idx, val in enumerate(key):
-            if (val in key_dict):
-                if (key_dict[val] > idx + 1):
-                    key_dict[val] = idx + 1
+    for o in keymap:
+        for i,key in enumerate(o):
+            if key not in key_dict:
+                key_dict[key] = i+1
             else:
-                key_dict[val] = idx + 1
-
-    for target in targets:
-        tmp = 0
-
-        for t in target:
-            if (t in key_dict):
-                tmp += key_dict[t]
+                key_dict[key]= min(key_dict[key],i+1)
+    for i in targets:
+        sum=0
+        for j in i:
+            if j not in key_dict:
+                return -1
             else:
-                tmp = -1
-                break
-
-        answer.append(tmp)
-
+                sum +=key_dict[j]
+        answer.append(sum)
     return answer
