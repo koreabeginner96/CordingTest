@@ -39,4 +39,3 @@ def solution(survey, choices):
         else:
             answer+=A
     return answer
-print(solution(["TR", "RT", "TR"],[7, 1, 3]))
