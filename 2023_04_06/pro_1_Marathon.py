@@ -1,11 +1,12 @@
-def solution(players:list, callings):
+def solution(players:list, callings:list):
     dict={}
-    s=set(callings)
-    for i in s:
-        dict[i]=callings.count(i)
+    for i in callings:
+        if i not in dict:
+            dict[i]= callings.count(i)
     for j in players:
         if j in dict:
-            D=players.index(j)
-            players.pop(D)
-            players.insert(D-dict[j],j)
+            A=players.index(j)
+            players.pop(A)
+            players.insert(A-dict[j], j)
     return players
+print(solution(["mumu", "soe", "poe", "kai", "mine"], ["kai", "kai", "mine", "mine"]))
