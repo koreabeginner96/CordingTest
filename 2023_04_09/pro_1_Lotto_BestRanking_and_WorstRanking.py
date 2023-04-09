@@ -14,4 +14,3 @@ def solution(lottos:list, win_nums):
     answer.append(dict[cnt + A])
     answer.append(dict[cnt])
     return answer
-print(solution([45, 4, 35, 20, 3, 9],[20, 9, 3, 45, 4, 35]))
