@@ -7,4 +7,3 @@ def solution(numbers):
                 answer.append(A)
     answer.sort()
     return answer
-print(solution([5,0,2,7]))
