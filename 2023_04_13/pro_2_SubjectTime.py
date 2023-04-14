@@ -23,7 +23,7 @@ def solution(plans):
                 stack.pop()
                 cnt += 1    # 완료한 과제 카운트
 
-        if time in info:    # 현재 시간에 시작해야하는 과제가 존재하는 경우
+        if time in info:   # 현재 시간에 시작해야하는 과제가 존재하는 경우
             stack.append(info[time])    # stack에 그 과제 추가
 
         time += 1    # 1분씩 시간이 흐름
