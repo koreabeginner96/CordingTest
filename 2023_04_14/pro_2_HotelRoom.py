@@ -13,7 +13,3 @@ def solution(book_time):
             else:
                 dict[i]+=1
     return max(dict.values())
-
-
-
-    return
