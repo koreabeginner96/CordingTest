@@ -36,3 +36,4 @@ def solution(maps):
         return sorted(answer)
     else:
         return [-1]
+
