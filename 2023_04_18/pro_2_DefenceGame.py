@@ -16,4 +16,3 @@ def solution(n, k, enemy):
             k -= 1
         answer += 1
     return answer
-print(solution(7,3,	[5,4,4,3,3,2,1]))
