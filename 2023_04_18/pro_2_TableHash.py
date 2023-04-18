@@ -10,4 +10,3 @@ def solution(data, col, row_begin, row_end):
             # bitwise xor 연산자 ^=
         answer ^= result
     return answer
-print(solution([[2,2,6],[1,5,10],[4,2,9],[3,8,3]],2,2,3))
