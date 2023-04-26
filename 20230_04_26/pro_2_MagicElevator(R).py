@@ -8,7 +8,7 @@ def solution(storey):
             answer+=(10-r)
             storey+=10
         else:
-            if (storey/10)%10<4:
+            if (storey//10)%10<=4:
                 answer+=r
             else:
                 answer+=r
