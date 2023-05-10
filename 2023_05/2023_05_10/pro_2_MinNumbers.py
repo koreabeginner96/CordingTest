@@ -6,4 +6,3 @@ def solution(A:list,B:list):
     for i in range(len(A)):
         answer+=(A[i]*B[i])
     return answer
-print(solution([1,2],[3,4]))
